@@ -24,6 +24,7 @@
 </header>
 
 <body>
+    <script src="scriptt.js"> </script>
 <div class="row g-3 mar cen">
     <div class="borde">
         <b>Estudiante</b>
@@ -49,7 +50,7 @@
     <form class="mar">
         <div class="row g-3">
          <div class="col">
-           <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+           <input id="nombr" type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
          </div>
          <div class="col">
            <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
@@ -64,21 +65,20 @@
     </div>
     <div class="row g-3">
     <div class="col">
-        <input type="text" class="form-control" placeholder="Cantidad" aria-label="Nombre">
-      </div>
-    <select class="form-select form-select-sm col" aria-label=".form-select-sm example">
-       
-        <option value="1">Estudiante</option>
-        <option value="2">Trainee</option>
-        <option value="3">Junior</option>
+        <input id="cantidadentradas" type="text" class="form-control" placeholder="Cantidad">
+    </div>
+    <select id="categoria" class="form-select form-select-sm col" aria-label=".form-select-sm example">
+        <option value="estudiante">Estudiante</option>
+        <option value="trainee">Trainee</option>
+        <option value="junior">Junior</option>
       </select>
    </div>
-   <div class="alert alert-primary" role="alert">
-    Total a Pagar: $
+   <div id="totalapagar" class="alert alert-primary" role="alert">
+    Total a Pagar: $ 
   </div>
   <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-    <button class="btn btn-success me-md-2 col-6" type="button">Borrar</button>
-    <button class="btn btn-success col-6" type="button">Resumen</button>
+    <button class="btn btn-success me-md-2 col-6" type="button" id="borrarboton" onclick="borrar()">Borrar</button>
+    <button class="btn btn-success col-6" type="button" id="resumenboton" onclick="resumen()">Resumen</button>
   </div>
       </form> 
 </body>
